@@ -69,4 +69,21 @@ function order(arr){
 }
 
 order(orden)
-alert(orden); // 8, 5, 2, 1, -10 
+//alert(orden); // 8, 5, 2, 1, -10 
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Tenemos una matriz de cadenas arr. Nos gustaría tener una copia ordenada, pero arrsin modificarla.
+
+Crea una función copySorted(arr)que devuelva dicha copia.*/
+
+let triada = ["HTML", "JavaScript", "CSS"];
+function copySorted(arr){
+    let copia= arr.slice()
+  return  copia.sort()
+}
+
+let sorted = copySorted(triada);
+
+alert(sorted); // CSS, HTML, JavaScript
+alert(triada); // HTML, JavaScript, CSS (no changes) */
