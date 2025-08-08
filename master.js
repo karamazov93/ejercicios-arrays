@@ -1,4 +1,5 @@
 
+
 //convertir una frase con guiones a una cadena de palabras en la cual esten juntas y comiencen en mayuscula
 function palabra(str){
     let separacion= str.split("-")
@@ -94,6 +95,20 @@ Escriba la función shuffle(array)que baraja (reordena aleatoriamente) los eleme
 
 Múltiples ejecuciones de [número] shufflepueden dar lugar a diferentes órdenes de elementos. Por ejemplo: */
 
+
+let cadena= [1,2,3]
+
+function sufle(arr){
+    for (let i = arr.length -1 ; i > 0 ; i--) {
+        var p= Math.floor(Math.random() * (i + 1))
+
+        [arr[i], arr[p]] = [arr[p], arr[i]]
+    }
+   return arr
+}
+console.log("sufle para servir: ",sufle(cadena))
+
+/* es un shufle que reemplaza los numeros iguales, superficialmente da lo que se espera */
 let juego = [1, 2, 3];
 
 function shuffle(array){
@@ -120,3 +135,28 @@ console.log(shuffle(juego));
 ;
 // arr = [3, 1, 2]
 // ...
+
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Sea arruna matriz.
+
+Crea una función unique(arr)que debería devolver una matriz con elementos únicos de arr.
+
+Por ejemplo: */
+
+function unique(arr) {
+let newArr= arr.slice()
+for (let i = 0; i < newArr.length; i++) {
+    
+    
+}
+
+}
+
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+alert( unique(strings) ); // Hare, Krishna, :-O
+
