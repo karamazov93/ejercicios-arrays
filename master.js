@@ -30,6 +30,7 @@ let arr = [5, 3, 8, 1, 9, 2];
 let filtrados = filter(arr, 1, 4); // Buscamos números entre 2 y 8
 
 console.log(filtrados)
+/* ----------------------------------------------------------------------------------------------------------------- */
 
 
 /* Escriba una función filterRangeInPlace(arr, a, b)que obtenga un array arry elimine todos los valores excepto los que estén entre ay b. La prueba es: a ≤ arr[i] ≤ b.
@@ -55,3 +56,17 @@ for (let i = 0; i < arr.length; i++) {
 filterRangeInPlace(matriz, 1,5)
 console.log("mi matriz alterada: ",matriz);
 
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+
+/* Ordenar en orden decreciente
+importancia: 4 */
+let orden = [5, 2, 1, -10, 8];
+function order(arr){
+     arr.sort()
+    return arr.reverse()
+
+}
+
+order(orden)
+alert(orden); // 8, 5, 2, 1, -10 
