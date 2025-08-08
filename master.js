@@ -85,5 +85,38 @@ function copySorted(arr){
 
 let sorted = copySorted(triada);
 
-alert(sorted); // CSS, HTML, JavaScript
-alert(triada); // HTML, JavaScript, CSS (no changes) */
+//alert(sorted); // CSS, HTML, JavaScript
+//alert(triada); // HTML, JavaScript, CSS (no changes) */
+
+
+/* 
+Escriba la función shuffle(array)que baraja (reordena aleatoriamente) los elementos de la matriz.
+
+Múltiples ejecuciones de [número] shufflepueden dar lugar a diferentes órdenes de elementos. Por ejemplo: */
+
+let juego = [1, 2, 3];
+
+function shuffle(array){
+  for (let i = 0; i < array.length; i++) {
+  let contador= Math.floor(Math.random() * 3)
+ array.splice(1,1,contador )
+ 
+
+}
+return array
+}
+
+
+shuffle(juego);
+// arr = [3, 2, 1]
+console.log(shuffle(juego));
+
+
+console.log(shuffle(juego));
+  ;
+// arr = [2, 1, 3]
+
+console.log(shuffle(juego));
+;
+// arr = [3, 1, 2]
+// ...
