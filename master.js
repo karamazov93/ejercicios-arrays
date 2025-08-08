@@ -144,14 +144,16 @@ console.log(shuffle(juego));
 Crea una función unique(arr)que debería devolver una matriz con elementos únicos de arr.
 
 Por ejemplo: */
-
 function unique(arr) {
-let newArr= arr.slice()
-for (let i = 0; i < newArr.length; i++) {
-    
-    
-}
+  let result = [];
 
+  for (let str of arr) {
+    if (!result.includes(str)) {
+      result.push(str);
+    }
+  }
+
+  return result;
 }
 
 let strings = ["Hare", "Krishna", "Hare", "Krishna",
