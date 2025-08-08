@@ -22,7 +22,7 @@ La función no debe modificar la matriz. Debe devolver la nueva matriz. */
 
 function filter(arr, a, b){
 let cadena= arr.filter(function(item){
-    return item >=a & item <= b
+    return item >=a && item <= b
 })
 return cadena
 }
@@ -30,3 +30,28 @@ let arr = [5, 3, 8, 1, 9, 2];
 let filtrados = filter(arr, 1, 4); // Buscamos números entre 2 y 8
 
 console.log(filtrados)
+
+
+/* Escriba una función filterRangeInPlace(arr, a, b)que obtenga un array arry elimine todos los valores excepto los que estén entre ay b. La prueba es: a ≤ arr[i] ≤ b.
+
+La función solo debe modificar la matriz. No debe devolver nada. */
+
+
+let matriz=[1,2,4,5,7,8]
+console.log("mi matriz: ", matriz);
+
+function filterRangeInPlace(arr, a, b){
+for (let i = 0; i < arr.length; i++) {
+    let val= arr[i]
+    if (val < a || val > b) {
+        arr.splice(i,1)
+        i--
+    }
+    
+}
+}
+
+
+filterRangeInPlace(matriz, 1,5)
+console.log("mi matriz alterada: ",matriz);
+
